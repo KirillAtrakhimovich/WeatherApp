@@ -8,32 +8,25 @@
 import Foundation
 
 struct WeatherData: Codable{
-    let list: [List]
+    let list: [WeatherElement]
 }
-
-
-
-struct Main: Codable {
+struct WeatherElement: Codable {
+    let main: DetailedWeatherInfo
+    let weather: [Condition]
+    var dt_txt: String
+    let wind: Wind
+}
+struct DetailedWeatherInfo: Codable {
     let temp: Float
     let temp_max: Float
     let temp_min: Float
     let feels_like: Float
     let humidity: Float
-
 }
-
 struct Condition: Codable {
     let main: String
     let description: String
     let icon: String
-}
-
-struct List: Codable {
-    let main: Main
-    let weather: [Condition]
-    let dt_txt: String
-    let wind: Wind
-
 }
 struct Wind: Codable {
     let speed: Float
