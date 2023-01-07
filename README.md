@@ -1,4 +1,4 @@
-### Weather App :
+# Weather App 
 
 One of the first projects on the course :)
 
