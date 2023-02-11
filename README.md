@@ -1,6 +1,6 @@
 # Weather App 
 
-One of the first projects on the course :)
+My second project on the course :)
 
 I used standard URLSession for the network layer, in UI I used Auto Layout and Xib. CLLocationManager is used to determine the location. Aslo used weather API.
 
